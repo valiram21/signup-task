@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form task</title>
+    <link rel="stylesheet" href="./inputsignuptask.css">
+</head>
+<body>
+
+<h1>New User Signup</h1>
+
+<section>
+
+<input type="text" name="name" id="first-name" oninput="firstName()" placeholder=" FirstName"><br>
+<span id="span1">FirstName should contain 5-15 characters</span><br>
+   
+<input type="text" name="name" id="user-name" oninput="userName()" placeholder=" username"><br>
+<span id="span2">UserName should contain 5-12 characters</span><br>
+    
+<input type="email" name="email" id="email" oninput="email()" placeholder=" email"><br>
+<span id="span3">Email must be a valid address,e.g me@mydomain.com</span><br>
+   
+<input type="password" name="password" id="password" oninput="password()" placeholder=" password"><br>
+<span id="span4">password must be alphanumeric(@,_,and - are also allowed)and be 8-20 characters</span><br>
+   
+<input type="number" name="telenumber" id="telephone" oninput="telePhone()" placeholder=" telephone"><br>
+<span id="span5">Telephone must be a valid indian telephone number(10 digits)</span><br>
+
+<input type="text" name="pan" id="pan" oninput="pan()" placeholder=" panCard"><br>
+<span id="span6">Must be a valid pan number</span><br>
+
+</section>
+
+<script src="./inputsignuptask.js"></script>
+
+</body>
+</html>
